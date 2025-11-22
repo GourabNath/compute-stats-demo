@@ -2,7 +2,6 @@
 __version__ = "0.1.0"
 
 def compute_stats(numbers):
-    """Return (n, mean, std). Accepts list of floats/ints."""
     n = len(numbers)
     if n == 0:
         return 0, None, None
@@ -12,5 +11,4 @@ def compute_stats(numbers):
     return n, mean, std
 
 if __name__ == '__main__':
-    sample = [1,2,3,4,5]
-    print('v', __version__, '->', compute_stats(sample))
+    print('v', __version__, compute_stats([1,2,3,4,5]))
